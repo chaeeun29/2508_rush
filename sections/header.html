@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>러쉬</title>
+</head>
+<body>
+    <header class="con-min-width border-blue">
+        <div class="con flex border-red">
+            <div class="logo border-green">
+                <a href="#">
+                    <img src="../images/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="border-black flex-grow-1"></div>
+
+            <nav class="menu_box border-red">
+                <ul>
+                    <li><a href="#">러쉬소개</a></li>
+                    <li><a href="#">캠페인</a></li>
+                    <li><a href="#">스파</a></li>
+                    <li><a href="#">매장안내</a></li>
+                    <li><a href="#">기업 구매/협업 문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <style>
+        /* 노멀라이즈 */
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* 라이브러리 */
+        .border-red {
+            border: 3px solid red;
+        }
+
+        .border-blue {
+            border: 3px solid blue;
+        }
+
+        .border-green {
+            border: 3px solid green;
+        }
+
+        .border-black {
+            border: 3px solid black;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-jc-c {
+            justify-content: center;
+        }
+
+        .flex-ai-c {
+            align-items: center;
+        }
+
+        .flex-as-c {
+            align-self: center;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .height-100p {
+            height: 100%;
+        }
+
+        .con {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img-box > img {
+            width: 100%;
+            display: block;
+        }
+
+        /* 커스텀 */
+
+        .con-min-width {
+            min-width: 1080px;
+        }
+
+        .con {
+            width: 1080px;
+        }
+
+        header {
+            background-color: aqua;
+        }
+    </style>
+</body>
+</html>
