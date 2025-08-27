@@ -6,23 +6,31 @@
     <title>러쉬</title>
 </head>
 <body>
-    <header class="con-min-width border-blue">
-        <div class="con flex border-red">
-            <div class="logo border-green">
+    <header class="con-min-width">
+        <div class="con flex height-100p flex-jc-c">
+            <div class="logo flex-as-c">
                 <a href="#">
                     <img src="../images/logo.svg" alt="logo">
                 </a>
             </div>
 
-            <div class="border-black flex-grow-1"></div>
-
-            <nav class="menu_box border-red">
-                <ul>
-                    <li><a href="#">러쉬소개</a></li>
-                    <li><a href="#">캠페인</a></li>
-                    <li><a href="#">스파</a></li>
-                    <li><a href="#">매장안내</a></li>
-                    <li><a href="#">기업 구매/협업 문의</a></li>
+            <nav class="menu_box height-100p">
+                <ul class="flex height-100p">
+                    <li>
+                        <a href="#" class="flex flex-ai-c height-100p">러쉬소개</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex flex-ai-c height-100p">캠페인</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex flex-ai-c height-100p">스파</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex flex-ai-c height-100p">매장안내</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex flex-ai-c height-100p">기업 구매/협업 문의</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -105,11 +113,45 @@
 
         .con {
             width: 1080px;
+            gap: 0 102px;
         }
 
-        header {
-            background-color: aqua;
+        body {
+            background-color: rgb(204, 93, 161);
+            color: #fff;
         }
+
+        /* ----- 헤더 시작 ----- */
+        header {
+            height: 96px;
+            width: 100%;
+            font-size: 16px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* ----- 로고 ----- */
+        header .logo > a {
+            width: 81px;
+        }
+
+        header .logo > a > img {
+            width: 100%;
+        }
+
+        /* ----- 메뉴박스 시작 -----*/
+        header .menu_box > ul > li > a {
+            margin: 0 24px;
+            font-weight: 333;
+        }
+
+        header .menu_box > ul > li:hover > a {
+            font-weight: 777;
+        }
+
+
     </style>
 </body>
 </html>
