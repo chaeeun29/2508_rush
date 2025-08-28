@@ -6,36 +6,27 @@
     <title>러쉬</title>
 </head>
 <body>
-    <div class="wrap">
-        <header class="con-min-width">
-            <div class="con flex height-100p flex-jc-c">
-                <div class="logo flex-as-c">
-                    <a href="#">
-                        <img src="../images/logo.svg" alt="logo">
-                    </a>
-                </div>
+    <div class="main">
+        <div class="main_banner con-min-width">
+            <div class="main_txt">
+                <p class="title">
+                    <span>지친 피부에</span>
+                    <span>충전이 필요한 지금!</span>
+                </p>
 
-                <nav class="menu_box height-100p">
-                    <ul class="flex height-100p">
-                        <li>
-                            <a href="#" class="flex flex-ai-c height-100p">러쉬소개</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex flex-ai-c height-100p">캠페인</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex flex-ai-c height-100p">스파</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex flex-ai-c height-100p">매장안내</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex flex-ai-c height-100p">기업 구매/협업 문의</a>
-                        </li>
-                    </ul>
-                </nav>
+                <p class="main_btn">
+                    <a href="#">
+                        <img src="../images/btn_app_apple.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../images/btn_app_google.png" alt="">
+                    </a>
+                </p>
             </div>
-        </header>
+            <img src="../images/visual_main.gif" alt="">
+        </div>
+
+        <div class=""></div>
     </div>
 
     
@@ -126,36 +117,49 @@
         }
 
         /* ----- 헤더 시작 ----- */
-        header {
-            height: 96px;
+        
+        /* ----- 헤더 끝 ----- */
+
+        /* ----- 메인배너 시작 ----- */
+
+        .main_banner::after {
+            content: "";
+            display: block;
             width: 100%;
-            font-size: 16px;
-            position: fixed;
+            height: 100%;
+            position: absolute;
             top: 0;
             left: 0;
-            border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+            background: rgba(0, 0, 0, 0.4)
+        }
+        /* ----- 메인배너 - 텍스트 부분 ----- */
+        .main_banner > .main_txt {
+            padding-left: 104px;
+            position: absolute;
+            left: 50%;
+            bottom: 14%;
+            width: 1224px;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 56px;
         }
 
-        /* ----- 로고 ----- */
-        header .logo > a {
-            width: 81px;
+        .main_banner > .main_txt > .title {
+            font-weight: 700;
         }
 
-        header .logo > a > img {
-            width: 100%;
+        .main_banner > .main_txt span {
+            display: block;
+            line-height: 72px;
+        }
+        /* ----- 메인배너 - 버튼 부분 ----- */
+        .main_banner .main_btn  {
+            margin-top: 64px;
         }
 
-        /* ----- 메뉴박스 시작 -----*/
-        header .menu_box > ul > li > a {
-            margin: 0 24px;
-            font-weight: 333;
+        .main_banner .main_btn img {
+            width: 200px;
         }
-
-        header .menu_box > ul > li:hover > a {
-            font-weight: 777;
-        }
-
-        /* ----- 헤더 끝 ----- */
     </style>
 </body>
 </html>
